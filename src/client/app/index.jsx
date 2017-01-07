@@ -1,17 +1,17 @@
 import React from 'react';
 import {render} from 'react-dom';
+import {hashHistory, Router, Route, IndexRoute} from 'react-router'
 
-import HelloComponent from './HelloComponent.jsx'
+import App from './components/App.jsx'
+import About from './components/about/About.jsx'
+import Hello from './components/hello/Hello.jsx';
 
-class App extends React.Component {
-  render () {
-  	return (
-  		<div>
-	  		<h1>Hello There!</h1>
-	  		<HelloComponent />
-  		</div>
-  	);
-  } 
-}
-
-render(<App/>, document.getElementById('app'));
+render(
+  <Router history={hashHistory}>
+	<Route path="/" component={App}>
+		<Route path="/about" component={About}/>
+		<Route path="/hello" component={Hello}/>
+	</Route>
+  </Router>,
+  document.getElementById('root')
+);
