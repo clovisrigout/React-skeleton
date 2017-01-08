@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Link } from 'react-router';
 
 class NavLink extends React.Component {
   render() {
@@ -7,4 +7,4 @@ class NavLink extends React.Component {
   }
 }
 
-export default NavLink
+export default NavLink;

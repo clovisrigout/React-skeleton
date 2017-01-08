@@ -4,19 +4,16 @@ import {render} from 'react-dom';
 import Hello from './hello/Hello.jsx';
 import Home from './home/Home.jsx';
 import NavLink from './nav/NavLink.jsx';
+import NavBar from './nav/NavBar.jsx';
 
 class App extends React.Component {
   render () {
-  	return (
-  		<div>
-  			<h1>Hello Lucas</h1>
-	  		<ul role="nav">
-  				<li><NavLink to="/about">About</NavLink></li>
-  				<li><NavLink to="/hello">Hello</NavLink></li>
-			  </ul>
-			{this.props.children || <Home/>}
-  		</div>
-  	);
+    return (
+      <div>
+        <NavBar/>
+      {this.props.children || <Home/>}
+      </div>
+    );
   }
 }
 
