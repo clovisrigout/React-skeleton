@@ -1,5 +1,8 @@
 import React from 'react';
 
+import User from '../user/User.jsx';
+
+
 class Hello extends React.Component {
 
   constructor(props) {
@@ -10,6 +13,7 @@ class Hello extends React.Component {
     return (
       <div>
         <h1>Hello World!</h1>
+        <User/>
       </div>
     );
   }

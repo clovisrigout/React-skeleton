@@ -1,9 +1,9 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {hashHistory, Router, Route, IndexRoute} from 'react-router'
+import {hashHistory, Router, Route, IndexRoute} from 'react-router';
 
-import App from './components/App.jsx'
-import About from './components/about/About.jsx'
+import App from './components/App.jsx';
+import About from './components/about/About.jsx';
 import Hello from './components/hello/Hello.jsx';
 
 render(

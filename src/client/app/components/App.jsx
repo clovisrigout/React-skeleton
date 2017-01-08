@@ -9,11 +9,11 @@ class App extends React.Component {
   render () {
   	return (
   		<div>
-  			<h1>Main App</h1>
+  			<h1>Hello Lucas</h1>
 	  		<ul role="nav">
-				<li><NavLink to="/about">About</NavLink></li>
-				<li><NavLink to="/hello">Hello</NavLink></li>
-			</ul>
+  				<li><NavLink to="/about">About</NavLink></li>
+  				<li><NavLink to="/hello">Hello</NavLink></li>
+			  </ul>
 			{this.props.children || <Home/>}
   		</div>
   	);
